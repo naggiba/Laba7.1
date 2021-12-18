@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Tic Tac Toe Game</title>
+    <style>
+    #ttt-game {
+      display: grid;
+      max-width: 600px;/*встановлюю макисмальну ширину діва*/
+      margin: 0 auto;
+      grid-template-columns: 33% 33% 33%; /*розділив дів на 9 чатин*/
+      grid-gap: 5px; /*відстань між частинами блоку*/
+    }
+    #ttt-game div {
+      font-size: 3em;
+      text-align: center;/*розміщення по центру тексру в дів*/
+      background: #eee;/*фон діва*/
+      padding: 50px;
+    }
+    #ttt-game div.player {/*змінюю колі для кожної комірки гравця*/
+      background: #c2e3ff;
+    }
+    #ttt-game div.computer {/*змінюю колі для кожної комірки компютера*/
+      background: #ffebeb;
+    }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="ttt-game"></div>
+  </body>
+</html>
